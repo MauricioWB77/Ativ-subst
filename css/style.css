@@ -33,9 +33,18 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     color:whitesmoke;
     font-family: 'Times New Roman', Times, serif;
     font-size: 10px; 
-    padding: 10px 5px 10px 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+.success:hover{
+    background-color: rgb(153, 255, 0);
+    padding: 11px 16px 11px 16px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    
 }
 
 body{
-
+background-color: aliceblue;
 }
