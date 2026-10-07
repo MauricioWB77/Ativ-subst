@@ -25,3 +25,17 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 #box-second{
     background-color: blueviolet;
 }
+
+.success{
+    border-radius: 25px;
+    background-color: green;
+    border: 6px;
+    color:whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px; 
+    padding: 10px 5px 10px 5px;
+}
+
+body{
+
+}
