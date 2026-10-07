@@ -13,5 +13,15 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .box{
     padding: 5px;
     border: 3px solid black;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-right: 3px;
+    margin-left: 5px;
+    text-align: center;
 
+}
+
+#box-second{
+    background-color: blueviolet;
 }
