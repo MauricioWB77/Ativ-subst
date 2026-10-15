@@ -1,4 +1,4 @@
-function informaçao() {
+function informacao() {
 
     let nome = prompt("digite seu nome");
     alert("Bem-vindo, " + nome + "! Vamos informar seus dados.");
