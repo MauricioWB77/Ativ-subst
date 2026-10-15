@@ -1,22 +1,14 @@
 function informaçao() {
 
-    let nome = prompt("Digite seu nome:");
-    alert("Bem-vindo, " + nome + " ! ");
+    let nome = prompt("digite seu nome");
+    alert("Bem-vindo, " + nome + "! Vamos informar seus dados.");
 
-    let idade = prompt("Digite sua idade:");
-    alert("Você Tem: " + idade + " anos. ");
+    let salariomensal = parsefloat(prompt("Digite seu Salário mensal:"));
+    alert("Seu salario é R$ " + salariomensal.tofixed(2));
 
-    let curso = prompt("Digite seu curso:");
-    alert("Seu curso é: " + curso + " . ");
+    let aliemntacao = parsefloat(prompt("digite seu gasto com alimentação mensal:"));
+    alert("Seu gasto com alimentação é R$ " + alimentacao.tofixed(2));
 
-    let cidade = prompt("Digite sua cidade:");
-    alert("Você mora em: " + cidade + " . ")
-
-    let hobby = prompt("Digite seu Hobby favorito:");
-    alert("seu hobby é: " + hobby + " . ");
-
-    alert("cadastro finalizado com sucesso")
-
-
-    
+    let saldo = salariomensal - alimentacao;
+    alert("Seu saldo final é R$ " + saldo.tofixed(2) + ". ");
 }
