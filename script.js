@@ -10,7 +10,7 @@ for (let tentativa = 1; tentativa <= maxTentativas; tentativa++) {
     if (usuarioInput === usuarioCorreto && senhaInput === senhaCorreta) {
         alert("Login efetuado com sucesso! Bem-vindo.");
         logado = true;
-        breal;
+        break;
     }
 
 
