@@ -1,14 +1,25 @@
-function informacao() {
+const usuarioCorreto = "admin";
+const senhaCorreta = "12345";
+const maxTentativas = 3;
+let logado = false;
 
-    let nome = prompt("digite seu nome");
-    alert("Bem-vindo, " + nome + "! Vamos informar seus dados.");
+for (let tentativa = 1; tentativa <= maxTentativas; tentativa++) {
+    let usuarioInput = prompt(`[Tentativa ${tentativa} de ${maxTentativas}] Digite o usuário:`);
+    let senhaInput = prompt(`[Tentativa ${tentativa} de ${maxTentativas}] Digite a senha:`);
+    
+    if (usuarioInput === usuarioCorreto && senhaInput === senhaCorreta) {
+        alert("Login efetuado com sucesso! Bem-vindo.");
+        logado = true;
+        breal;
+    }
 
-    let salariomensal = parsefloat(prompt("Digite seu Salário mensal:"));
-    alert("Seu salario é R$ " + salariomensal.tofixed(2));
 
-    let aliemntacao = parsefloat(prompt("digite seu gasto com alimentação mensal:"));
-    alert("Seu gasto com alimentação é R$ " + alimentacao.tofixed(2));
+    if (tentativa < maxTentativas) {
+        alert(`Dados incorretos! você ainda tem ${maxTentativas - tentativa} tentativa(s).`);
+    }
+}
 
-    let saldo = salariomensal - alimentacao;
-    alert("Seu saldo final é R$ " + saldo.tofixed(2) + ". ");
+
+if (!logado) {
+    alert("Numero maximo de tentativas excedido! sua conta foi bloqueada por sergurança.");
 }
